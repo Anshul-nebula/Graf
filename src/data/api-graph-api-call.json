@@ -1,0 +1,4 @@
+{
+  "query-1": "{\"db\":\"flow_log\",\"table\":\"service_graph\",\"filters\":{\"cluster\":\"'__any'\",\"namespace\":\"'__any'\",\"service\":\"'sand-user-service.doe2e'\",\"protocol\":\"'__any'\",\"port\":\"'0'\",\"endpoint\":\"'/api/v1/app/login/verify'\"},\"granularity\":\"api\",\"startTime\":\"2024-09-27T06:17:13.606Z\",\"endTime\":\"2024-09-27T06:32:13.607Z\"}",
+  "query-2": "{\"db\":\"flow_log\",\"table\":\"service_graph\",\"filters\":{\"cluster\":\"'__any'\",\"namespace\":\"'__any'\",\"service\":\"'retool-external'\",\"protocol\":\"'__any'\",\"port\":\"'0'\",\"endpoint\":\"'/api/branches/getCommitsOnBranch'\"},\"granularity\":\"api\",\"startTime\":\"2024-09-27T06:19:55.310Z\",\"endTime\":\"2024-09-27T06:34:55.310Z\"}"
+}

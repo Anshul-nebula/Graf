@@ -1,0 +1,858 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "name": "API Gateway",
+      "port": 8080,
+      "k8sNamespace": "default",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 5000000,
+      "successRatio": 0.995,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n2",
+      "name": "User Service",
+      "port": 8081,
+      "k8sNamespace": "users",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 3000000,
+      "successRatio": 0.998,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n3",
+      "name": "Auth Service",
+      "port": 8082,
+      "k8sNamespace": "auth",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 4000000,
+      "successRatio": 0.999,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n4",
+      "name": "Product Service",
+      "port": 8083,
+      "k8sNamespace": "products",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 2500000,
+      "successRatio": 0.997,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n5",
+      "name": "Order Service",
+      "port": 8084,
+      "k8sNamespace": "orders",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 1500000,
+      "successRatio": 0.996,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n6",
+      "name": "Payment Service",
+      "port": 8085,
+      "k8sNamespace": "payments",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 1000000,
+      "successRatio": 0.9995,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n7",
+      "name": "Inventory Service",
+      "port": 8086,
+      "k8sNamespace": "inventory",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 2000000,
+      "successRatio": 0.998,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n8",
+      "name": "Notification Service",
+      "port": 8087,
+      "k8sNamespace": "notifications",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 800000,
+      "successRatio": 0.997,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n9",
+      "name": "Analytics Service",
+      "port": 8088,
+      "k8sNamespace": "analytics",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 500000,
+      "successRatio": 0.995,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n10",
+      "name": "Cache Service",
+      "port": 6379,
+      "k8sNamespace": "cache",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 10000000,
+      "successRatio": 0.9999,
+      "serviceType": "Redis"
+    },
+    {
+      "id": "n11",
+      "name": "Search Service",
+      "port": 8089,
+      "k8sNamespace": "search",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 3500000,
+      "successRatio": 0.997,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n12",
+      "name": "Recommendation Service",
+      "port": 8090,
+      "k8sNamespace": "recommendations",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 1200000,
+      "successRatio": 0.996,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n13",
+      "name": "Content Management Service",
+      "port": 8091,
+      "k8sNamespace": "cms",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 700000,
+      "successRatio": 0.998,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n14",
+      "name": "Logging Service",
+      "port": 8092,
+      "k8sNamespace": "logging",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 8000000,
+      "successRatio": 0.9995,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n15",
+      "name": "Monitoring Service",
+      "port": 8093,
+      "k8sNamespace": "monitoring",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 5000000,
+      "successRatio": 0.9998,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n16",
+      "name": "Email Service",
+      "port": 8094,
+      "k8sNamespace": "email",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 600000,
+      "successRatio": 0.997,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n17",
+      "name": "SMS Service",
+      "port": 8095,
+      "k8sNamespace": "sms",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 400000,
+      "successRatio": 0.998,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n18",
+      "name": "Shipping Service",
+      "port": 8096,
+      "k8sNamespace": "shipping",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 300000,
+      "successRatio": 0.995,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n19",
+      "name": "Tax Calculation Service",
+      "port": 8097,
+      "k8sNamespace": "tax",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 250000,
+      "successRatio": 0.999,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n20",
+      "name": "Fraud Detection Service",
+      "port": 8098,
+      "k8sNamespace": "fraud",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 900000,
+      "successRatio": 0.9997,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n21",
+      "name": "Customer Support Service",
+      "port": 8099,
+      "k8sNamespace": "support",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 150000,
+      "successRatio": 0.996,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n22",
+      "name": "Feedback Service",
+      "port": 8100,
+      "k8sNamespace": "feedback",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 100000,
+      "successRatio": 0.998,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n23",
+      "name": "A/B Testing Service",
+      "port": 8101,
+      "k8sNamespace": "abtesting",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 2000000,
+      "successRatio": 0.997,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n24",
+      "name": "Translation Service",
+      "port": 8102,
+      "k8sNamespace": "translation",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 1500000,
+      "successRatio": 0.996,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n25",
+      "name": "Image Processing Service",
+      "port": 8103,
+      "k8sNamespace": "imageprocessing",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 800000,
+      "successRatio": 0.995,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n26",
+      "name": "Video Streaming Service",
+      "port": 8104,
+      "k8sNamespace": "videostreaming",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 5000000,
+      "successRatio": 0.998,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n27",
+      "name": "Geo Location Service",
+      "port": 8105,
+      "k8sNamespace": "geolocation",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 1000000,
+      "successRatio": 0.997,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n28",
+      "name": "Data Export Service",
+      "port": 8106,
+      "k8sNamespace": "dataexport",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 50000,
+      "successRatio": 0.999,
+      "serviceType": "GRPC"
+    },
+    {
+      "id": "n29",
+      "name": "Backup Service",
+      "port": 8107,
+      "k8sNamespace": "backup",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 10000,
+      "successRatio": 0.9999,
+      "serviceType": "HTTP"
+    },
+    {
+      "id": "n30",
+      "name": "Machine Learning Service",
+      "port": 8108,
+      "k8sNamespace": "ml",
+      "k8sCluster": "prod-cluster",
+      "totalInvocations": 500000,
+      "successRatio": 0.996,
+      "serviceType": "GRPC"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "invocations": 2500000,
+      "averageLatency": 30,
+      "latencyVariance": 5
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n3",
+      "invocations": 3500000,
+      "averageLatency": 25,
+      "latencyVariance": 4
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "target": "n4",
+      "invocations": 2000000,
+      "averageLatency": 35,
+      "latencyVariance": 6
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "target": "n3",
+      "invocations": 2000000,
+      "averageLatency": 20,
+      "latencyVariance": 3
+    },
+    {
+      "id": "e5",
+      "source": "n2",
+      "target": "n10",
+      "invocations": 5000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e6",
+      "source": "n3",
+      "target": "n10",
+      "invocations": 6000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e7",
+      "source": "n4",
+      "target": "n5",
+      "invocations": 1500000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e8",
+      "source": "n4",
+      "target": "n7",
+      "invocations": 1800000,
+      "averageLatency": 30,
+      "latencyVariance": 5
+    },
+    {
+      "id": "e9",
+      "source": "n4",
+      "target": "n10",
+      "invocations": 4000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e10",
+      "source": "n5",
+      "target": "n6",
+      "invocations": 1000000,
+      "averageLatency": 50,
+      "latencyVariance": 10
+    },
+    {
+      "id": "e11",
+      "source": "n5",
+      "target": "n7",
+      "invocations": 800000,
+      "averageLatency": 35,
+      "latencyVariance": 7
+    },
+    {
+      "id": "e12",
+      "source": "n5",
+      "target": "n10",
+      "invocations": 3000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e13",
+      "source": "n6",
+      "target": "n10",
+      "invocations": 2000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e14",
+      "source": "n7",
+      "target": "n10",
+      "invocations": 3500000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e15",
+      "source": "n1",
+      "target": "n8",
+      "invocations": 700000,
+      "averageLatency": 45,
+      "latencyVariance": 9
+    },
+    {
+      "id": "e16",
+      "source": "n5",
+      "target": "n8",
+      "invocations": 500000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e17",
+      "source": "n6",
+      "target": "n8",
+      "invocations": 300000,
+      "averageLatency": 45,
+      "latencyVariance": 9
+    },
+    {
+      "id": "e18",
+      "source": "n8",
+      "target": "n10",
+      "invocations": 1500000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e19",
+      "source": "n1",
+      "target": "n9",
+      "invocations": 500000,
+      "averageLatency": 55,
+      "latencyVariance": 11
+    },
+    {
+      "id": "e20",
+      "source": "n2",
+      "target": "n9",
+      "invocations": 400000,
+      "averageLatency": 50,
+      "latencyVariance": 10
+    },
+    {
+      "id": "e21",
+      "source": "n4",
+      "target": "n9",
+      "invocations": 300000,
+      "averageLatency": 60,
+      "latencyVariance": 12
+    },
+    {
+      "id": "e22",
+      "source": "n5",
+      "target": "n9",
+      "invocations": 200000,
+      "averageLatency": 55,
+      "latencyVariance": 11
+    },
+    {
+      "id": "e23",
+      "source": "n9",
+      "target": "n10",
+      "invocations": 1000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e24",
+      "source": "n1",
+      "target": "n11",
+      "invocations": 3000000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e25",
+      "source": "n4",
+      "target": "n11",
+      "invocations": 2000000,
+      "averageLatency": 35,
+      "latencyVariance": 7
+    },
+    {
+      "id": "e26",
+      "source": "n11",
+      "target": "n10",
+      "invocations": 5000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e27",
+      "source": "n1",
+      "target": "n12",
+      "invocations": 1000000,
+      "averageLatency": 50,
+      "latencyVariance": 10
+    },
+    {
+      "id": "e28",
+      "source": "n4",
+      "target": "n12",
+      "invocations": 800000,
+      "averageLatency": 45,
+      "latencyVariance": 9
+    },
+    {
+      "id": "e29",
+      "source": "n12",
+      "target": "n10",
+      "invocations": 2000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e30",
+      "source": "n1",
+      "target": "n13",
+      "invocations": 600000,
+      "averageLatency": 55,
+      "latencyVariance": 11
+    },
+    {
+      "id": "e31",
+      "source": "n13",
+      "target": "n10",
+      "invocations": 1200000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e32",
+      "source": "n1",
+      "target": "n14",
+      "invocations": 7000000,
+      "averageLatency": 15,
+      "latencyVariance": 3
+    },
+    {
+      "id": "e33",
+      "source": "n14",
+      "target": "n10",
+      "invocations": 8000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e34",
+      "source": "n1",
+      "target": "n15",
+      "invocations": 4500000,
+      "averageLatency": 20,
+      "latencyVariance": 4
+    },
+    {
+      "id": "e35",
+      "source": "n15",
+      "target": "n10",
+      "invocations": 5000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e36",
+      "source": "n1",
+      "target": "n16",
+      "invocations": 500000,
+      "averageLatency": 60,
+      "latencyVariance": 12
+    },
+    {
+      "id": "e37",
+      "source": "n8",
+      "target": "n16",
+      "invocations": 400000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e38",
+      "source": "n1",
+      "target": "n17",
+      "invocations": 350000,
+      "averageLatency": 65,
+      "latencyVariance": 13
+    },
+    {
+      "id": "e39",
+      "source": "n8",
+      "target": "n17",
+      "invocations": 300000,
+      "averageLatency": 45,
+      "latencyVariance": 9
+    },
+    {
+      "id": "e40",
+      "source": "n5",
+      "target": "n18",
+      "invocations": 250000,
+      "averageLatency": 70,
+      "latencyVariance": 14
+    },
+    {
+      "id": "e41",
+      "source": "n6",
+      "target": "n18",
+      "invocations": 200000,
+      "averageLatency": 75,
+      "latencyVariance": 15
+    },
+    {
+      "id": "e42",
+      "source": "n5",
+      "target": "n19",
+      "invocations": 200000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e43",
+      "source": "n6",
+      "target": "n19",
+      "invocations": 150000,
+      "averageLatency": 45,
+      "latencyVariance": 9
+    },
+    {
+      "id": "e44",
+      "source": "n2",
+      "target": "n20",
+      "invocations": 800000,
+      "averageLatency": 35,
+      "latencyVariance": 7
+    },
+    {
+      "id": "e45",
+      "source": "n6",
+      "target": "n20",
+      "invocations": 700000,
+      "averageLatency": 30,
+      "latencyVariance": 6
+    },
+    {
+      "id": "e46",
+      "source": "n1",
+      "target": "n21",
+      "invocations": 120000,
+      "averageLatency": 80,
+      "latencyVariance": 16
+    },
+    {
+      "id": "e47",
+      "source": "n8",
+      "target": "n21",
+      "invocations": 100000,
+      "averageLatency": 50,
+      "latencyVariance": 10
+    },
+    {
+      "id": "e48",
+      "source": "n1",
+      "target": "n22",
+      "invocations": 80000,
+      "averageLatency": 75,
+      "latencyVariance": 15
+    },
+    {
+      "id": "e49",
+      "source": "n4",
+      "target": "n22",
+      "invocations": 70000,
+      "averageLatency": 55,
+      "latencyVariance": 11
+    },
+    {
+      "id": "e50",
+      "source": "n1",
+      "target": "n23",
+      "invocations": 1800000,
+      "averageLatency": 25,
+      "latencyVariance": 5
+    },
+    {
+      "id": "e51",
+      "source": "n23",
+      "target": "n10",
+      "invocations": 3000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e52",
+      "source": "n1",
+      "target": "n24",
+      "invocations": 1300000,
+      "averageLatency": 45,
+      "latencyVariance": 9
+    },
+    {
+      "id": "e53",
+      "source": "n13",
+      "target": "n24",
+      "invocations": 500000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e54",
+      "source": "n1",
+      "target": "n25",
+      "invocations": 700000,
+      "averageLatency": 70,
+      "latencyVariance": 14
+    },
+    {
+      "id": "e55",
+      "source": "n13",
+      "target": "n25",
+      "invocations": 400000,
+      "averageLatency": 65,
+      "latencyVariance": 13
+    },
+    {
+      "id": "e56",
+      "source": "n1",
+      "target": "n26",
+      "invocations": 4500000,
+      "averageLatency": 55,
+      "latencyVariance": 11
+    },
+    {
+      "id": "e57",
+      "source": "n26",
+      "target": "n10",
+      "invocations": 7000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e58",
+      "source": "n1",
+      "target": "n27",
+      "invocations": 900000,
+      "averageLatency": 40,
+      "latencyVariance": 8
+    },
+    {
+      "id": "e59",
+      "source": "n27",
+      "target": "n10",
+      "invocations": 1500000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    },
+    {
+      "id": "e60",
+      "source": "n1",
+      "target": "n28",
+      "invocations": 40000,
+      "averageLatency": 100,
+      "latencyVariance": 20
+    },
+    {
+      "id": "e61",
+      "source": "n9",
+      "target": "n28",
+      "invocations": 30000,
+      "averageLatency": 90,
+      "latencyVariance": 18
+    },
+    {
+      "id": "e62",
+      "source": "n1",
+      "target": "n29",
+      "invocations": 8000,
+      "averageLatency": 150,
+      "latencyVariance": 30
+    },
+    {
+      "id": "e63",
+      "source": "n14",
+      "target": "n29",
+      "invocations": 7000,
+      "averageLatency": 130,
+      "latencyVariance": 26
+    },
+    {
+      "id": "e64",
+      "source": "n1",
+      "target": "n30",
+      "invocations": 450000,
+      "averageLatency": 85,
+      "latencyVariance": 17
+    },
+    {
+      "id": "e65",
+      "source": "n9",
+      "target": "n30",
+      "invocations": 300000,
+      "averageLatency": 75,
+      "latencyVariance": 15
+    },
+    {
+      "id": "e66",
+      "source": "n11",
+      "target": "n30",
+      "invocations": 250000,
+      "averageLatency": 70,
+      "latencyVariance": 14
+    },
+    {
+      "id": "e67",
+      "source": "n12",
+      "target": "n30",
+      "invocations": 200000,
+      "averageLatency": 80,
+      "latencyVariance": 16
+    },
+    {
+      "id": "e68",
+      "source": "n23",
+      "target": "n30",
+      "invocations": 150000,
+      "averageLatency": 90,
+      "latencyVariance": 18
+    },
+    {
+      "id": "e69",
+      "source": "n30",
+      "target": "n10",
+      "invocations": 1000000,
+      "averageLatency": 5,
+      "latencyVariance": 1
+    }
+  ]
+}

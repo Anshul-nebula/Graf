@@ -1,0 +1,4 @@
+{
+  "query-1": "{\"db\":\"flow_log\",\"table\":\"service_graph\",\"filters\":{\"cluster\":\"'__any'\",\"namespace\":\"'__any'\",\"service\":\"'scm-inventory-availability'\",\"protocol\":\"'__any'\",\"port\":\"'0'\",\"endpoint\":\"\"},\"granularity\":\"service\",\"startTime\":\"2024-09-27T05:58:15.813Z\",\"endTime\":\"2024-09-27T06:13:15.814Z\"}",
+  "query-2": "{\"db\":\"flow_log\",\"table\":\"service_graph\",\"filters\":{\"cluster\":\"'__any'\",\"namespace\":\"'__any'\",\"service\":\"'vhc-composer'\",\"protocol\":\"''\",\"port\":\"\",\"endpoint\":\"\"},\"granularity\":\"service\",\"startTime\":\"2024-09-27T05:58:15.813Z\",\"endTime\":\"2024-09-27T06:13:15.814Z\"}"
+}
